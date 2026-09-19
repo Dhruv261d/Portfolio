@@ -44,7 +44,7 @@ const dockApps = [
   },
   {
     id: "safari",
-    name: "Articles", // was "Safari"
+    name: "Projects", // was "Safari"
     icon: "safari.png",
     canOpen: true,
   },
@@ -70,7 +70,7 @@ const dockApps = [
     id: "trash",
     name: "Archive", // was "Trash"
     icon: "trash.png",
-    canOpen: false,
+    canOpen: true,
   },
 ];
 
@@ -80,22 +80,29 @@ const blogPosts = [
     date: "Sep 2, 2025",
     title:
       "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-    image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+    image: "/public/images/Sorting.jpg",
+    link: "https://dhruv261d.github.io/sorting-visualizer/",
   },
   {
     id: 2,
     date: "Aug 28, 2025",
     title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-    image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+    image: "/public/images/OS.png",
+    link: "https://dhruv261d.github.io/OSAlgoVisualizer/",
   },
   {
     id: 3,
     date: "Aug 15, 2025",
     title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+    image: "/public/images/Codefolio.jpg",
+    link: "https://codefolio-seven.vercel.app/",
+  },
+  {
+    id: 4,
+    date: "Aug 15, 2025",
+    title: "The Ultimate Guide to Mastering GSAP Animations",
+    image: "/public/images/owl.GIF",
+    link: "https://contest-tracker-dhruv261.netlify.app/",
   },
 ];
 
@@ -132,29 +139,29 @@ const socials = [
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    link: "https://github.com/Dhruv261d",
   },
   {
     id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
+    text: "LinkedIn",
+    icon: "/icons/linkedin.svg",
+    bg: "#05b6f6",
+    link: "https://www.linkedin.com/in/dhruv-kadam/",
   },
   {
     id: 3,
     text: "Twitter/X",
     icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
+    bg: "#4bcb63",
+    link: "https://x.com/DhruvKadam26",
   },
-  {
-    id: 4,
-    text: "LinkedIn",
-    icon: "/icons/linkedin.svg",
-    bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
-  },
+  // {
+  //   id: 4,
+  //   text: "Platform",
+  //   icon: "/icons/atom.svg",
+  //   bg: "#ff866b",
+  //   link: "https://jsmastery.com/",
+  // },
 ];
 
 const photosLinks = [
@@ -188,20 +195,20 @@ const photosLinks = [
 const gallery = [
   {
     id: 1,
-    img: "/images/gal1.png",
-  },
-  {
-    id: 2,
-    img: "/images/gal2.png",
+    img: "/public/images/22.jpeg",
   },
   {
     id: 3,
-    img: "/images/gal3.png",
+    img: "/public/images/5.jpeg",
+  },
+  {
+    id: 2,
+    img: "/public/images/4.jpeg",
   },
   {
     id: 4,
-    img: "/images/gal4.png",
-  },
+    img: "/public/images/66.jpeg",
+  }
 ];
 
 export {
@@ -397,7 +404,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
+      imageUrl: "/public/images/22.jpeg",
     },
     {
       id: 2,
@@ -406,7 +413,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
+      imageUrl: "/images/55.jpeg",
     },
     {
       id: 3,
@@ -415,7 +422,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "/images/4.jpeg",
     },
     {
       id: 4,
@@ -425,12 +432,10 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
+      image: "/images/22.jpeg",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+        "Hey! I’m Dhruv 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
+        "I specialize in JavaScript and React—and I love making things feel smooth, fast, and just a little bit delightful.",
       ],
     },
   ],
@@ -501,6 +506,7 @@ const WINDOW_CONFIG = {
   terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  trash: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };
